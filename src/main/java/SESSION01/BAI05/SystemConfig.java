@@ -1,4 +1,4 @@
-package org.example.model;
+package SESSION01.BAI05;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
