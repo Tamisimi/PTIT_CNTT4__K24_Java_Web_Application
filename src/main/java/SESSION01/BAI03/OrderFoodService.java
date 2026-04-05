@@ -8,7 +8,7 @@ public class OrderFoodService {
     private final InventoryRepository inventoryRepository;
     private final UserAccountRepository userAccountRepository;
 
-    // Constructor Injection (DI)
+    // Constructor Injection
     public OrderFoodService(InventoryRepository inventoryRepository,
                             UserAccountRepository userAccountRepository) {
         this.inventoryRepository = inventoryRepository;
@@ -22,7 +22,7 @@ public class OrderFoodService {
             return "Hết hàng";
         }
 
-        double price = 20000; // ví dụ giá cố định
+        double price = 20000;
         double total = price * quantity;
 
         double balance = userAccountRepository.getBalance(username);
