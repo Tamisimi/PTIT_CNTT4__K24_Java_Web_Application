@@ -1,6 +1,6 @@
 package SESSION01.BAI01
 
-
+public class Main {
 // Sai ở dòng:
 // this.gateway = new InternalPaymentGateway();
 
@@ -13,3 +13,4 @@ package SESSION01.BAI01
 
 // Kết luận:
 // → Cách viết này tạo tight coupling, không tận dụng được Dependency Injection của Spring nên làm ứng dụng kém linh hoạt
+}
