@@ -1,6 +1,6 @@
 package SESSION01.BAI02
 
-
+public class Main {
 // Vấn đề nằm ở chỗ: @Component mặc định trong Spring Framework có scope là Singleton
 
 // Giải thích:
@@ -12,3 +12,4 @@ package SESSION01.BAI02
 // Kết luận:
 // → Do dùng Singleton cho dữ liệu mang tính "state riêng theo từng user/session"
 // → Nên gây ra shared state → dẫn đến tính tiền sai
+}
