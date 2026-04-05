@@ -1,6 +1,6 @@
 package SESSION01.BAI04;
 
-// ===== Interface =====
+// Interface
 interface EmailSender {
     void send(String message);
 }
@@ -9,7 +9,7 @@ interface SmsSender {
     void send(String message);
 }
 
-// ===== GIẢI PHÁP 1: Constructor Injection =====
+//GIẢI PHÁP 1: Constructor Injection
 class NotificationService_Constructor {
 
     private final EmailSender emailSender;
@@ -31,15 +31,15 @@ class NotificationService_Constructor {
 
 /*
 Ưu điểm:
-- Rõ dependency, dễ test, có thể dùng final (immutability)
-- Xử lý tốt lỗi (SMS lỗi → Email)
+- Rõ dependency, dễ test, có thể dùng final 
+- Xử lý tốt lỗi 
 
 Nhược điểm:
 - Constructor dài nếu nhiều dependency
 */
 
 
-// ===== GIẢI PHÁP 2: Field Injection =====
+//GIẢI PHÁP 2: Field Injection 
 class NotificationService_Field {
 
     EmailSender emailSender;
